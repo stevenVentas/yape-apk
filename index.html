@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Servicio en mantenimiento</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0f172a;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .loader {
+        width: 80px;
+        height: 80px;
+        border: 8px solid #334155;
+        border-top: 8px solid #22c55e;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 30px;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 22px;
+        background: #22c55e;
+        color: #0f172a;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+        background: #16a34a;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Servicio en mantenimiento</h1>
+
+    <div class="loader"></div>
+
+    <a class="btn" 
+       href="https://wa.me/51921114873" 
+       target="_blank">
+       Soporte WhatsApp
+    </a>
+</div>
+
+</body>
+</html>
